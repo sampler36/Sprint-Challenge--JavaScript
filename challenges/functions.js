@@ -6,25 +6,16 @@
   * The last parameter accepts a callback 
   * In the body of the function return the callback with the two parameters that you created
 */
-        const persons = [
-          { name: 'Peter', age: 16 },
-          { name: 'Mark', age: 18 },
-          { name: 'John', age: 27 },
-          { name: 'Jane', age: 14 },
-          { name: 'Tony', age: 24},
-        ];
-
-        const fullAge = persons.filter(person => person.age >= 18);
-
-        console.log(fullAge);
-    
+        function consume( a, b, cb){
+          return cb(a , b)
+        }
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two number
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 // =====1=====
-function add(){
+function add( ){
   var total =  Array.prototype.slice.call(arguments).reduce(function(a, b) { 
   return a + b; 
   });
@@ -33,7 +24,7 @@ function add(){
 console.log(add(2,2)); 
 // =======2=====
 
-function multiply(){
+function consume(){
   var total =  Array.prototype.reduce.call(arguments, function(a, b) { 
   return a * b; 
   });

@@ -53,20 +53,22 @@ const graduates = [{id:1,first_name:"Cynde", university:"Missouri Southern State
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 
-const uni1 =  ["Missouri Southern State College"];
-const uni2 =  ["The School of the Art Institute of Chicago"];
-const uni3 =  ["Marian College"];
-const uni4 =  ["International Medical & Technological University"];
-const uni5 =  ["Sultan Salahuddin Abdul Aziz Shah Polytechnic"];
-const uni6 =  ["Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft"];
-const uni7 =  ["Salem University"];
-const uni8 =  ["Coastal Carolina University"];
-const uni9 =  ["Universidad Católica de Ávila"];
-const uni10 =  ["Universitat Rovira I Virgili Tarragona"];
+// const uni1 =  ["Missouri Southern State College"];
+// const uni2 =  ["The School of the Art Institute of Chicago"];
+// const uni3 =  ["Marian College"];
+// const uni4 =  ["International Medical & Technological University"];
+// const uni5 =  ["Sultan Salahuddin Abdul Aziz Shah Polytechnic"];
+// const uni6 =  ["Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft"];
+// const uni7 =  ["Salem University"];
+// const uni8 =  ["Coastal Carolina University"];
+// const uni9 =  ["Universidad Católica de Ávila"];
+// const uni10 =  ["Universitat Rovira I Virgili Tarragona"];
 
-const universities = uni1.concat( uni2, uni3, uni3, uni4, uni5, uni6, uni7, uni8, uni9, uni10);
-  // universities.sort();
-  console.log(universities.sort());
+// const universities = uni1.concat( uni2, uni3, uni3, uni4, uni5, uni6, uni7, uni8, uni9, uni10);
+//   // universities.sort();
+
+  // do a for loop and then push the universities to the new array
+  // console.log(universities.sort());
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -74,6 +76,10 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
+
+// from graduates , 
+//(first name and email )
+
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
@@ -106,7 +112,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 // const animalNames = animalNames.call( zooAnimals => {
 //   [`Name:${animal_name} , Scientific: ${scientific_name}`];
 // });
-const animalNames = []
+let animalNames = []
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -114,20 +120,11 @@ console.log(animalNames);
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each name to convert them all to lower case.  Log the resut.
 
 */
-  const aniNames = [
-              {"animal_name":"Jackal, asiatic"},
-        {"animal_name":"Screamer, southern"},
-        {"animal_name":"White spoonbill"},
-        {"animal_name":"White-cheeked pintail"},
-        {"animal_name":"Black-backed jackal"},
-        {"animal_name":"Brolga crane"},
-        {"animal_name":"Common melba finch"},
-        {"animal_name":"Pampa gray fox"},
-        {"animal_name":"Hawk-eagle, crowned"},
-        {"animal_name":"Australian pelican"}
-        ];
-console.log(aniNames.lowercase)
-  
+let animalName = [ ]
+     for(let i = 0;i < zooAnimals.length; i++){
+       animalName.push(zooAnimals[i].animal_name)
+     }
+console.log(animalName);
 /* Request 3: .filter() 
 
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
