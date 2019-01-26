@@ -6,7 +6,7 @@ This challenge allows you to practice the concepts and techniques learned over t
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
+This is an indiv"id"ual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
 You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in JavaScript fundamentals.
 
@@ -43,7 +43,7 @@ Edit this document to include your answers after each question. Make sure to lea
 * [ ] Fork the project into your GitHub user account
 * [ ] Clone the forked project into a directory on your machine
 * [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [ ] You are now ready to build this project with your preferred "id"E
 
 ## Minimum Viable Product
 
@@ -60,7 +60,7 @@ This challenge takes a look at callbacks and closures as well as scope.
 * [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
-Create constructors, bind methods, and create cuboids in this prototypes challenge.
+Create constructors, bind methods, and create cubo"id"s in this prototypes challenge.
 * [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 ## Task 4: Classes
