@@ -24,7 +24,7 @@ function add( ){
 console.log(add(2,2)); 
 // =======2=====
 
-function consume(){
+function multiply(){
   var total =  Array.prototype.reduce.call(arguments, function(a, b) { 
   return a * b; 
   });
