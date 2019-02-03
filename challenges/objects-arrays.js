@@ -75,17 +75,14 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
-// let contactInfo = first_name + email
+
 const contactInfo = [];
 
 for (i = 0; i < graduates.length; i++){
   contactInfo.push(graduates[i]["first_name"]);
   contactInfo.push(graduates[i]["email"]);
 }
-
 console.log(contactInfo);
-// from graduates , 
-//(first name and email )
 
 
 

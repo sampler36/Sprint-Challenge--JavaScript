@@ -30,7 +30,7 @@ class CuboidMaker{
     Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
   */
     surfaceArea(){
-      return 2 * (this.length * this.width + this.height * this.height + this.width * this.height)
+      return  2 * (this.length * this.width + this.length * this.height + this.width * this.height) //managed to console log the right 
     }
 }
   
@@ -46,7 +46,7 @@ class CuboidMaker{
   })
   // Test your volume and surfaceArea methods by uncommenting the logs below:
   console.log(cuboid.volume()); // 100
-  console.log(cuboid.surfaceArea()); // 140
+  console.log(cuboid.surfaceArea()); // 130
   
   
   
