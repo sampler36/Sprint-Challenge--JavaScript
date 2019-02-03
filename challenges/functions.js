@@ -15,38 +15,32 @@ function consume(a, b, cb) {
  * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
  */
 // =====1=====
-// function add(a, b) {
-//     return a + b;
-//   });
-//   return total;
-// }
-// console.log(add(2, 2));
+function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 2));
 // // =======2=====
 
-// function multiply() {
-//     return a * b;
-//   });
-//   return total;
-// }
-// console.log(multiply(10, 16));
+function multiply( a, b) {
+    return a * b;
+}
+console.log(multiply(10, 16));
 
-// ===== lastname ad lastname =========
+// =====  3 lastname ad lastname =========
 
 const people = [
   { first_name: "Mary", last_name: "Poppins", age: 30 },
   { first_name: "Tale", last_name: "Anto", age: 20 }
 ];
 
-people.forEach(forEachCallback);
-
-function forEachCallback(person) {
-  console.log(`${person.first_name} ${person.last_name} nice to meet you`);
+function greeting(first_name, last_name ) { //parameters mut be same as properties
+  console.log(`Hello ${first_name} ${last_name} nice to meet you`);
 }
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // ==== Closures ====
 
@@ -61,24 +55,17 @@ The nested function can  inherit the arguments and variables of its containing f
     The inner function forms a closure: the inner function can use the arguments and variables of the outer function, while the outer function cannot use the arguments and variables of the inner function.
 
 */
-// const external = "I'm outside the function";
-var person = function(name) {
-  // The outer function defines a variable called "name"
-  var getName = function() {
-    return name; // The inner function has access to the "name" variable of the outer
-  };
-  return getName; // Return the inner function, thereby exposing it to outer scopes
-};
-myName = person("Talent");
+const external = "I'm outside the function";
 
-console.log(myName());
+console.log(external); //this is outside the function
 
 function myFunction() {
   const internal = "Hello! I'm inside myFunction!";
 
   function nestedFunction() {
-    console.log(internal);
+    console.log(internal); //this is inside the function
   }
   nestedFunction();
 }
 myFunction();
+
